@@ -26,6 +26,7 @@ import AddResources from "../pages/admin/ecommerce/resources/addresource";
 import EditResources from "../pages/admin/ecommerce/resources/editresource";
 import ResourcesDetails from "../pages/admin/ecommerce/resources/resourcedetails";
 import OrderDetail from "../pages/admin/ecommerce/orders/orderdetails";
+import Login from "../pages/auth/login";
 
 const Routing = () => {
   return (
@@ -68,6 +69,8 @@ const Routing = () => {
       {/* order section routes */}
       <Route path="/admin/ecommerce/orders" element={<Orders />} />
       <Route path="admin/ecommerce/orders/orderdetails/:id" element={<OrderDetail />} />
+      {/* Auth pages routes */}
+      <Route path="/login" element={<Login />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
   );

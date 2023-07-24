@@ -6,7 +6,8 @@ import { useLocation } from "react-router-dom";
 
 const App = () => {
   const location: any = useLocation();
-  return location.pathname !== "/not-found" || location.pathname == '/' ? (
+  console.log(location.pathname);
+  return (location.pathname !== "/not-found" && location.pathname !== "/" &&  location.pathname !== '/login')? (
     <Sidebar>
       <Header />
       <div className="overflow-y-auto pb-20 h-screen">

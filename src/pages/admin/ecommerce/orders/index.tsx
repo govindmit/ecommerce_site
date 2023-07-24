@@ -7,6 +7,7 @@ import { BiEditAlt, BiSearch } from 'react-icons/bi';
 import ReactPaginate from 'react-paginate';
 import { AiFillEye, AiOutlineDelete } from 'react-icons/ai';
 import DeleteConfirmBox from '../../../../common/components/alertmodel';
+import Pagination from '../../../../common/components/pagination';
 
 const Orders = () => {
   const headersData = ["id", "name", "amount", "start date", "end date", "status", "image", "actions"];
@@ -4220,23 +4221,31 @@ const Orders = () => {
       status: "active",
     },
   ];
-  const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 10;
-  const pageCount = Math.ceil(rowsData.length / itemsPerPage);
-  const offset = currentPage * itemsPerPage;
-  const currentPageData = rowsData.slice(offset, offset + itemsPerPage);
-  const handlePageChange = ({ selected }) => {
-    setCurrentPage(selected);
-  };
-  const startIndex = offset + 1;
-  const endIndex = Math.min(offset + itemsPerPage, rowsData.length);
-
+ 
+    // pagination start
+    const [pageNumber, setPageNumber] = useState(0);
+    const [currentPage, setCurrentPage] = useState(0);
+    const itemsPerPage = 10;
+    const pageCount = Math.ceil(rowsData.length / itemsPerPage);
+  
+    const offset = currentPage * itemsPerPage;
+    const currentPageData = rowsData.slice(offset, offset + itemsPerPage);
+  
+    const startIndex = offset + 1;
+    const endIndex = Math.min(offset + itemsPerPage, rowsData.length);
+  
+    const handlePageChange = (data: any) => {
+      const selectedPage = data.selected;
+      setCurrentPage(selectedPage);
+      setPageNumber(selectedPage);
+    };
+    // pagination end
 
   return (
     <>
       <div className="container mx-12 ml-12 mt-4 pr-2 ">
         <Breadcrumb breadcrumbs={orderBreadcrums} />
-        <div className="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden mt-4">
+        <div className="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden mt-4 pb-4">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
             <div className="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
               <div className="flex items-center space-x-3 w-full md:w-auto">
@@ -4265,34 +4274,14 @@ const Orders = () => {
               </div>
             </div>
           </div>
-          <div className="">
-            <div className="flex flex-wrap justify-end mr-4">
-              <div className="m-2">
-                <p className="text-xs text-gray-700">
-                  Showing
-                  <span className="font-medium"> {startIndex} </span>
-                  to
-                  <span className="font-medium"> {endIndex} </span>
-                  of
-                  <span className="font-medium"> {rowsData?.length} </span>
-                  results
-                </p>
-              </div>
-              <ReactPaginate
-                previousLabel="< "
-                nextLabel=" >"
-                breakLabel="..."
-                breakClassName={"break-me"}
-                pageCount={pageCount}
-                marginPagesDisplayed={1}
-                pageRangeDisplayed={1}
-                onPageChange={handlePageChange}
-                containerClassName="pagination"
-                activeClassName="active"
-                renderOnZeroPageCount={null}
-              />
-            </div>
-          </div>
+          <Pagination
+            pageCount={pageCount}
+            forcePage={pageNumber}
+            AllData={rowsData}
+            startIndex={startIndex}
+            endIndex={endIndex}
+            handlePageChange={handlePageChange}
+          />
           <div className="overflow-x-auto ">
             <table className="w-full sm:bg-white rounded-lg overflow-hidden  my-5 text-gray-500 dark:text-gray-400">
               <thead className="text-xs text-gray-700 uppercase text-left	 bg-gray-50 dark:bg-gray-700 dark:text-gray-400 hidden sm:table-header-group">
@@ -4361,32 +4350,14 @@ const Orders = () => {
             </table>
           </div>
           {/* pagination */}
-          <div className="flex flex-wrap justify-end mr-4 mb-6">
-            <div className="m-2">
-              <p className="text-xs text-gray-700">
-                Showing
-                <span className="font-medium"> {startIndex} </span>
-                to
-                <span className="font-medium"> {endIndex} </span>
-                of
-                <span className="font-medium"> {rowsData?.length} </span>
-                results
-              </p>
-            </div>
-            <ReactPaginate
-              previousLabel="< "
-              nextLabel=" >"
-              breakLabel="..."
-              breakClassName={"break-me"}
-              pageCount={pageCount}
-              marginPagesDisplayed={1}
-              pageRangeDisplayed={1}
-              onPageChange={handlePageChange}
-              containerClassName="pagination"
-              activeClassName="active"
-              renderOnZeroPageCount={null}
-            />
-          </div>
+          <Pagination
+            pageCount={pageCount}
+            forcePage={pageNumber}
+            AllData={rowsData}
+            startIndex={startIndex}
+            endIndex={endIndex}
+            handlePageChange={handlePageChange}
+          />
         </div>
       </div>
     </>

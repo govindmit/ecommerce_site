@@ -76,6 +76,10 @@ td:not(:last-child) {
   border-radius: unset;
   border-radius: 20%;
 }
+.paginationDisableButton > a{
+  color: #80808075 !important;
+  background-color: #9a9a9a17;
+}
 
 .emailbodytext {
   height: 315px;
