@@ -99,3 +99,13 @@ td:not(:last-child) {
   right: 0;
   color: red;
 }
+
+/*if you want to input type='number' hidden up/down arrows So, add 'remove-arrow' class  */
+@layer base {
+  input[type='number'].remove-arrow::-webkit-outer-spin-button,
+  input[type='number'].remove-arrow::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield !important;
+  }
+}

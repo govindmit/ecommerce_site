@@ -1,7 +1,7 @@
 import React from "react";
 export function ErrorShowing(errorMessage: any) {
     return (
-        <p className="text-red-500 font-medium text-xs mt-1">{errorMessage}</p>
+        <p className="text-red-500 font-medium text-xs mt-1 h-0.5">{errorMessage}</p>
     );
 }
 export function ErrorAlertShowing(alerterrorMessage: any) {

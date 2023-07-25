@@ -1,7 +1,7 @@
 //dashboard section breadcrumbs
 export const DashboardBreadcums = {
   previous_title: "Dashboard",
-  icons: "../../../../public/icons/dashboard.png",
+  icons: "/icons/dashboard.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -11,7 +11,7 @@ export const DashboardBreadcums = {
 
 export const EditEmailCntBreadcum = {
   previous_title: "Dashboard",
-  icons: "../../../../public/icons/dashboard.png",
+  icons: "/icons/dashboard.png",
   previous_title_link: "/admin/dashboard/siteconfigration",
   middle_title: "SiteConfigration",
   middle_title_link: "/admin/dashboard/siteconfigration",
@@ -21,7 +21,7 @@ export const EditEmailCntBreadcum = {
 //user section breadcrumbs
 export const userBreadcrums = {
   previous_title: "User",
-  icons: "../../../../public/icons/user.png",
+  icons: "/icons/user.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -29,7 +29,7 @@ export const userBreadcrums = {
 };
 export const dashboardBreadcrums = {
   previous_title: "Dashboard",
-  icons: "../../../../public/icons/dashboard.png",
+  icons: "/icons/dashboard.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -38,7 +38,7 @@ export const dashboardBreadcrums = {
 
 export const roleBreadcrums = {
   previous_title: "User",
-  icons: "../../../../public/icons/user.png",
+  icons: "/icons/user.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -47,7 +47,7 @@ export const roleBreadcrums = {
 
 export const AddUserBreadcrums = {
   previous_title: "User",
-  icons: "../../../../public/icons/user.png",
+  icons: "/icons/user.png",
   previous_title_link: "/admin/users",
   middle_title: "",
   middle_title_link: "",
@@ -56,7 +56,7 @@ export const AddUserBreadcrums = {
 
 export const EditUserBreadcrums = {
   previous_title: "User",
-  icons: "../../../../public/icons/user.png",
+  icons: "/icons/user.png",
   previous_title_link: "/admin/users",
   middle_title: "",
   middle_title_link: "",
@@ -66,7 +66,7 @@ export const EditUserBreadcrums = {
 //product section breadcrumbs
 export const productBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -75,7 +75,7 @@ export const productBreadcrums = {
 
 export const AddProductBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/products",
   middle_title: "Products",
   middle_title_link: "/admin/ecommerce/products",
@@ -84,7 +84,7 @@ export const AddProductBreadcrums = {
 
 export const EditProductBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/products",
   middle_title: "Products",
   middle_title_link: "/admin/ecommerce/products",
@@ -93,7 +93,7 @@ export const EditProductBreadcrums = {
 
 export const ProductDetailsBreadcrumb = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/products",
   middle_title: "Products",
   middle_title_link: "/admin/ecommerce/products",
@@ -103,7 +103,7 @@ export const ProductDetailsBreadcrumb = {
 //coupons breadcrums
 export const couponBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -112,7 +112,7 @@ export const couponBreadcrums = {
 
 export const addcouponBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "Coupons",
   middle_title: "Coupons",
   middle_title_link: "/admin/ecommerce/coupons",
@@ -120,7 +120,7 @@ export const addcouponBreadcrums = {
 };
 export const editcouponBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "Coupons",
   middle_title: "Coupons",
   middle_title_link: "/admin/ecommerce/coupons",
@@ -129,7 +129,7 @@ export const editcouponBreadcrums = {
 
 export const coupondetailBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "Coupons",
   middle_title: "Coupons",
   middle_title_link: "/admin/ecommerce/coupons",
@@ -139,7 +139,7 @@ export const coupondetailBreadcrums = {
 //subscription breadcrums
 export const subscriptionBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -148,7 +148,7 @@ export const subscriptionBreadcrums = {
 
 export const addsubscriptionBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/subscriptions",
   middle_title: "Subscriptions",
   middle_title_link: "/admin/ecommerce/subscriptions",
@@ -157,7 +157,7 @@ export const addsubscriptionBreadcrums = {
 
 export const editsubscriptionBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/subscriptions",
   middle_title: "Subscriptions",
   middle_title_link: "/admin/ecommerce/subscriptions",
@@ -166,7 +166,7 @@ export const editsubscriptionBreadcrums = {
 
 export const subscriptiondetailsBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/subscriptions",
   middle_title: "Subscriptions",
   middle_title_link: "/admin/ecommerce/subscriptions",
@@ -176,7 +176,7 @@ export const subscriptiondetailsBreadcrums = {
 //resource breadcruns
 export const resourceBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -184,7 +184,7 @@ export const resourceBreadcrums = {
 };
 export const addresourceBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/resources",
   middle_title: "Resources",
   middle_title_link: "/admin/ecommerce/resources",
@@ -192,7 +192,7 @@ export const addresourceBreadcrums = {
 };
 export const editresourceBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/resources",
   middle_title: "Resources",
   middle_title_link: "/admin/ecommerce/resources",
@@ -200,7 +200,7 @@ export const editresourceBreadcrums = {
 };
 export const resourcedetailsBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/resources",
   middle_title: "Resources",
   middle_title_link: "/admin/ecommerce/resources",
@@ -210,7 +210,7 @@ export const resourcedetailsBreadcrums = {
 //order breadcrums
 export const orderBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "",
   middle_title: "",
   middle_title_link: "",
@@ -218,7 +218,7 @@ export const orderBreadcrums = {
 };
 export const orderdetailBreadcrums = {
   previous_title: "Ecommerce",
-  icons: "../../../../public/icons/globe.png",
+  icons: "/icons/globe.png",
   previous_title_link: "/admin/ecommerce/orders",
   middle_title: "Orders",
   middle_title_link: "/admin/ecommerce/orders",
@@ -227,7 +227,7 @@ export const orderdetailBreadcrums = {
 
 export const ViewUserBreadcrums = {
   previous_title: "User",
-  icons: "../../../../public/icons/user.png",
+  icons: "/icons/user.png",
   previous_title_link: "/admin/users",
   middle_title: "",
   middle_title_link: "",

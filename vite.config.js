@@ -8,6 +8,11 @@ export default defineConfig({
   variants: {
     fill: ['hover', 'focus'], // this line does the trick
   },
+  server: {
+    watch: {
+      usePolling: true
+    }
+  },
   define: {
     'process.env': process.env
   }

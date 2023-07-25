@@ -27,6 +27,7 @@ import EditResources from "../pages/admin/ecommerce/resources/editresource";
 import ResourcesDetails from "../pages/admin/ecommerce/resources/resourcedetails";
 import OrderDetail from "../pages/admin/ecommerce/orders/orderdetails";
 import Login from "../pages/auth/login";
+import Register from "../pages/auth/register";
 
 const Routing = () => {
   return (
@@ -71,6 +72,10 @@ const Routing = () => {
       <Route path="admin/ecommerce/orders/orderdetails/:id" element={<OrderDetail />} />
       {/* Auth pages routes */}
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/forgotpassword" element={<Login />} />
+      <Route path="/resetpassword" element={<Login />} />
+      {/* If not match route */}
       <Route path="*" element={<Error404 />} />
     </Routes>
   );
